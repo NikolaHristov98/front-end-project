@@ -1,0 +1,29 @@
+{
+  "name": "fron-end-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "browser-sync": "",
+    "csso": "",
+    "gulp": "",
+    "gulp-util": "",
+    "gulp-load-plugins": "",
+    "gulp-autoprefixer": "",
+    "gulp-changed": "",
+    "gulp-csso": "",
+    "gulp-htmlmin": "",
+    "gulp-inline-source": "",
+    "gulp-notify": "",
+    "gulp-plumber": "",
+    "gulp-sass": "",
+    "gulp-size": "",
+    "gulp-sourcemaps": ""
+  },
+  "scripts": {},
+  "author": "",
+  "license": "ISC"
+}
