@@ -1,7 +1,8 @@
 # Site settings
 
-title: Jekyll Theme - Lazy
+title: The game jounal
 description: It is minimal and lazy!
+logo: ./imgs/space-invaders-svgrepo-com.svg
 
 email: nikhri98@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog

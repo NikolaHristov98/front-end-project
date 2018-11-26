@@ -103,28 +103,29 @@ h6 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  grid-template-columns: 1fr 4fr 5fr; }
-  @media screen and (max-width: 600px) {
+  grid-template-columns: 1fr 2fr; }
+  @media screen and (min-width: 600px) {
     .site-header {
-      grid-template-columns: 1fr 2fr; } }
+      grid-template-columns: 1fr 4fr 5fr; } }
   .site-header:after {
     display: block;
     width: inherit;
+    margin-top: 1rem;
     content: "";
-    margin: 1rem 1rem;
     border-bottom: 0.2rem solid black;
     grid-column: 1 / -1; }
 
 .site-logo {
   width: 5rem;
-  margin: 0 0 0 1rem; }
+  padding-left: 1rem; }
 
 .site-title {
   font-size: 2rem;
   text-align: center; }
 
 .site-nav {
-  padding: 0.2rem 1rem 0.2rem 0; }
+  grid-column: 1 / -1;
+  padding: 0.2rem 4rem; }
   .site-nav > ul {
     list-style: none;
     display: -webkit-box;
@@ -136,9 +137,48 @@ h6 {
       text-align: center;
       font-size: 1rem;
       margin: 0 0.3rem; }
-  @media screen and (max-width: 600px) {
+  @media screen and (min-width: 600px) {
     .site-nav {
-      grid-column: 1 / -1;
-      padding: 0.2rem 4rem; } }
+      padding: 0.2rem 1rem 0.2rem 0;
+      grid-column: inherit; } }
+
+footer {
+  display: grid;
+  grid-template-columns: 2fr 3fr 1fr 1fr;
+  padding: 2rem 0;
+  font-size: 0.7rem; }
+  footer:before {
+    display: block;
+    width: inherit;
+    content: "";
+    border-bottom: 0.2rem solid black;
+    grid-column: 1 / -1;
+    margin-bottom: 1rem; }
+  .branding {
+    text-align: center;
+    -ms-flex-item-align: center;
+    align-self: center; }
+    .branding .branding-logo {
+      width: 5em; }
+    .branding .branding-title {
+      font-size: 1.1em; }
+  .moto {
+    font-size: 1.5em;
+    font-style: italic;
+    -ms-flex-item-align: center;
+    align-self: center; }
+  .footer-category {
+    font-size: 1.2em; }
+    .footer-category > p:first-child {
+      margin-bottom: 0.6em; }
+  footer ul > li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 0.8em;
+    font-style: italic;
+    margin: 0.5em 0 0 0.5em; }
+    footer ul > li p {
+      margin-left: 0.5em; }
 
 /*# sourceMappingURL=map/styles.css.map */

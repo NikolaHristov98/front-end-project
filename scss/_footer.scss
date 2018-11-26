@@ -1,0 +1,52 @@
+footer{
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr 1fr;
+    padding: 2rem 0;
+
+    font-size: 0.7rem;
+
+    @at-root #{&}:before{
+        display: block;
+        width: inherit;
+        content:"";
+        border-bottom: 0.2rem solid black;
+        grid-column: 1 / -1;
+        margin-bottom: 1rem;
+    }
+
+     @at-root .branding{
+        text-align: center;
+        align-self: center;
+        #{&}-logo{
+            width: 5em;
+        }
+
+        #{&}-title{
+            font-size: 1.1em;
+        }
+    }
+
+    @at-root .moto{
+        font-size: 1.5em;
+        font-style: italic;
+        align-self: center;
+    }
+
+    @at-root .#{&}-category{
+        font-size: 1.2em;
+        > p:first-child{
+            margin-bottom: 0.6em;
+        }
+    }
+
+
+    ul > li{
+        display: flex;
+        font-size: 0.8em;
+        font-style: italic;
+        margin: 0.5em 0 0 0.5em; 
+        p{
+            margin-left: 0.5em;
+        }
+    }
+}
