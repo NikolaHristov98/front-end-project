@@ -4,19 +4,11 @@
     {% include head.html %}
 </head>
 <body>
+    {% include header.html %}
+    <main>
+        {{content}}
+    </main>
 
-        {% include header.html %}
-    {{content}}
-
-    <h1>Heading 1</h1>
-<h2>Heading 2</h2>
-<h3>Heading 3</h3>
-<h4>Heading 4</h4>
-<h5>Heading 5</h5>
-<h6>Heading 6</h6>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat totam incidunt, odit distinctio soluta at praesentium dolorem fuga, omnis sequi temporibus suscipit dolorum voluptates ipsa optio molestias deleniti pariatur aspernatur.</p>
-
-{% include footer.html %}
+    {% include footer.html %}
 </body>
 </html>

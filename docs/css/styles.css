@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css?family=Abril+Fatface";
+@import "http://overpass-30e2.kxcdn.com/overpass.css";
 @import "https://fonts.googleapis.com/css?family=Bree+Serif";
 @import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
 html, body, div, span, applet, object, iframe,
@@ -48,55 +48,62 @@ textarea {
   overflow: auto; }
 
 html {
-  font: 14px / 1.2 "Bree Serif", serif; }
+  font: 12px "Bree Serif", serif;
+  padding: 2em 0.5em; }
 
 @media screen and (min-width: 600px) {
   html {
-    font-size: 16px;
-    margin: 0 0rem; } }
+    font-size: 13.5px;
+    padding: 2em 3rem; } }
 
 @media screen and (min-width: 750px) {
   html {
-    font-size: 18px;
-    margin: 0 3rem; } }
+    font-size: 15px;
+    padding: 2em 6rem; } }
 
 @media screen and (min-width: 900px) {
   html {
-    font-size: 20px;
-    margin: 0 6rem; } }
+    font-size: 16.5px;
+    padding: 2em 9rem; } }
 
 @media screen and (min-width: 1050px) {
   html {
-    font-size: 22px;
-    margin: 0 9rem; } }
+    font-size: 18px;
+    padding: 2em 12rem; } }
 
 @media screen and (min-width: 1200px) {
   html {
-    font-size: 24px;
-    margin: 0 12rem; } }
+    font-size: 19.5px;
+    padding: 2em 15rem; } }
 
 @media screen and (min-width: 1350px) {
   html {
-    font-size: 26px;
-    margin: 0 15rem; } }
+    font-size: 21px;
+    padding: 2em 18rem; } }
 
 h1 {
-  font-size: 3.157em; }
+  font-size: 3.157em;
+  margin: 0.5em 0; }
 
 h2 {
-  font-size: 2.369em; }
+  font-size: 2.369em;
+  margin: 0.5em 0; }
 
 h3 {
-  font-size: 1.777em; }
+  font-size: 1.777em;
+  margin: 0.5em 0; }
 
 h4 {
-  font-size: 1.333em; }
+  font-size: 1.333em;
+  margin: 0.5em 0; }
 
 h5 {
-  font-size: 1em; }
+  font-size: 1em;
+  margin: 0.5em 0; }
 
 h6 {
-  font-size: 1em; }
+  font-size: 1em;
+  margin: 0.5em 0; }
 
 .site-header {
   display: grid;
@@ -110,7 +117,7 @@ h6 {
   .site-header:after {
     display: block;
     width: inherit;
-    margin-top: 1rem;
+    margin-bottom: 1rem;
     content: "";
     border-bottom: 0.2rem solid black;
     grid-column: 1 / -1; }
@@ -120,6 +127,8 @@ h6 {
   padding-left: 1rem; }
 
 .site-title {
+  font-family: "overpass";
+  font-weight: bolder;
   font-size: 2rem;
   text-align: center; }
 
@@ -180,5 +189,10 @@ footer {
     margin: 0.5em 0 0 0.5em; }
     footer ul > li p {
       margin-left: 0.5em; }
+
+main {
+  line-height: 1.2; }
+  main p {
+    margin: 1em 0; }
 
 /*# sourceMappingURL=map/styles.css.map */

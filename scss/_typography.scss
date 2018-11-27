@@ -1,27 +1,30 @@
-@import "https://fonts.googleapis.com/css?family=Abril+Fatface";
+@import "http://overpass-30e2.kxcdn.com/overpass.css";
 @import "https://fonts.googleapis.com/css?family=Bree+Serif";
 
-$base-font-size: 14px;
+$base-font-size: 12px;
 $base-display-width: 600;
 
 $heading-sizing: 3.157em, 2.369em, 1.777em, 1.333em, 1em, 1em;
 
 html{
-    font: #{$base-font-size} / 1.2 "Bree Serif", serif;
+    font: #{$base-font-size} "Bree Serif", serif;
+    padding: 2em 0.5em;
 }
+
 
 @for $i from 1 through 6{
     @media screen and (min-width: #{$base-display-width + ($i - 1)*150}px){
         html{
-            font-size: #{$base-font-size + $i*2};
-            margin: 0 #{($i - 1) *3}rem;
+            font-size: #{$base-font-size + $i*1.5};
+            padding: 2em #{$i  *3}rem;
         }
     }
 }
 
 @for $i from 1 through 6{
     h#{$i}{
-        font-size: nth($heading-sizing, $i)
+        font-size: nth($heading-sizing, $i);
+        margin: 0.5em 0;
     }
 }
 

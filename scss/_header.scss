@@ -1,7 +1,10 @@
 .site{
     $parent: &;
 
+    
+
     @at-root #{&}-header{
+        
         display: grid;
         align-items: center;
         grid-template-columns: 1fr 2fr ;
@@ -13,7 +16,7 @@
         @at-root #{&}:after{
             display: block;
             width: inherit;
-            margin-top: 1rem;
+            margin-bottom: 1rem;
             content:"";
             border-bottom: 0.2rem solid black;
             grid-column: 1 / -1;
@@ -21,11 +24,14 @@
     }
 
     @at-root #{&}-logo{
+        
         width: 5rem;
         padding-left: 1rem;
     }
 
     @at-root #{&}-title{
+        font-family: "overpass";
+        font-weight: bolder;
         font-size: 2rem;
         text-align: center;
     }
