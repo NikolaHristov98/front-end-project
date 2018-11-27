@@ -1,24 +1,24 @@
 <footer class="footer">
     <div class="branding">
-        <img src="{{site.logo}}" alt="" class="branding-logo">
+        <img src="{{page.base_url}}{{site.logo}}" alt="" class="branding-logo">
         <p class="branding-title">{{site.title | upcase}}</p>
     </div>
     <div class="moto">From gamers to gamers</div>
     <div class="footer-category">
         <p>Site map</p>
         <ul>
-            <li><i class="fas fa-home"></i><p>Home</p></li>
-            <li><i class="fas fa-th"></i><p>Posts</p></li>
-            <li><i class="fas fa-envelope"></i><p>Contact us</p></li>
-            <li><i class="fas fa-bell"></i><p>Subscribe</p></li>
+            <li><i class="fas fa-home"></i><a href="/"><p>Home</p></a></li>
+            <li><i class="fas fa-th"></i><a href="/posts"><p>Posts</p></a></li>
+            <li><i class="fas fa-envelope"></i><a href="/contact"><p>Contact Us</p></a></li>
+            <li><i class="fas fa-bell"></i><a href="/subscribe"><p>Subscribe</p></a></li>
         </ul>
     </div>
     <div class="footer-category">
         <p>Contacts</p>
         <p >Nikola Hristov</p>
-        <ul>
-            <li><i class="fas fa-at"></i> <p>{{site.email}}</p></li>
-            <li><i class="fab fa-github-square"></i><p>{{site.github_username}}</p></li>
+        <ul>   
+            <li><i class="fas fa-at"></i><p>{{site.email}}</p></li>
+            <li><i class="fab fa-github-square"></i><a href="https://github.com/NikolaHristov98"><p>{{site.github_username}}</p></a></li>
         </ul>
     </div>
 </footer>

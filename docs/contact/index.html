@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" href="./favicon.ico" />
     <title>The game journal</title>
 </head>
 </head>
     <body>
         <header class="site-header"> 
-        <div class="site-logo"><img src="/./imgs/space-invaders-svgrepo-com.svg" alt=""></div>
+        <div class="site-logo"><img src=".././imgs/space-invaders-svgrepo-com.svg" alt=""></div>
         <div class="site-title">THE GAME JOURNAL</div>
         <div class="site-nav">
             <ul>
@@ -23,21 +23,32 @@
                 </ul>
         </div>
 </header>
-        <main class="">
-            <h2 id="welcome-to-the-game-journal">Welcome to the Game Journal</h2>
+        <main class="contact">
+            <div class="contacts">
+    <p>Contacts</p>
+        <p>Nikola Hristov</p>
+        <ul>   
+            <li><i class="fas fa-at"></i><p>nikhri98@gmail.com</p></li>
+            <li><i class="fab fa-github-square"></i><a href="https://github.com/NikolaHristov98"><p>nikolahristov98</p></a></li>
+        </ul>
+</div>
 
-<p>The place where you can find proper gaming journalism without the crappy politics.</p>
-
-<p>We hope you enjoy your stay and enjoy our works!</p>
-
-<p>If you want to tell us your story about gaimng or signal us about a incorect information etc. visit the <a href="/contact">Contacts</a> page or write on our email. We will be glad to hear ypour feedback</p>
-
+<div class="form">
+    <form action="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" />
+        <label for="email">Email:</label>
+        <input type="text" id="email" />
+        <label for="feedback">Your feedback</label>
+        <textarea type="text" id="feedvack"></textarea>
+    </form>
+</div>
 
         </main>
 
         <footer class="footer">
     <div class="branding">
-        <img src="/./imgs/space-invaders-svgrepo-com.svg" alt="" class="branding-logo">
+        <img src=".././imgs/space-invaders-svgrepo-com.svg" alt="" class="branding-logo">
         <p class="branding-title">THE GAME JOURNAL</p>
     </div>
     <div class="moto">From gamers to gamers</div>

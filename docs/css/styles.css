@@ -191,8 +191,35 @@ footer {
       margin-left: 0.5em; }
 
 main {
-  line-height: 1.2; }
+  line-height: 1.2;
+  margin: 0 2em; }
   main p {
     margin: 1em 0; }
+
+a {
+  text-decoration: none;
+  color: darkblue; }
+
+/* mouse over link */
+a:hover {
+  color: lightsteelblue; }
+
+form {
+  display: block;
+  width: calc(100% - 5em);
+  padding: 0 5em; }
+  label {
+    display: block; }
+  textarea {
+    resize: vertical;
+    min-height: 15em; }
+  textarea, input {
+    margin: 1em 0;
+    width: inherit; }
+
+@media screen and (min-width: 600px) {
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 3fr; } }
 
 /*# sourceMappingURL=map/styles.css.map */
