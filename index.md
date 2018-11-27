@@ -2,6 +2,7 @@
 layout: home
 permalink: /
 base_url: /
+class: home
 ---
 
 ## Welcome to the Game Journal
