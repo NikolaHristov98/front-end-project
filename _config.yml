@@ -2,11 +2,11 @@
 
 title: The game journal
 description: It is minimal and lazy!
-logo: ./imgs/space-invaders-svgrepo-com.svg
+logo: /imgs/space-invaders-svgrepo-com.svg
 
 email: nikhri98@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "." # the base hostname & protocol for your site, e.g. http://example.com
 
 twitter_username: ""
 github_username: nikolahristov98

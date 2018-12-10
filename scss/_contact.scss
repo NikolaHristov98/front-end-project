@@ -25,23 +25,63 @@
 
     @at-root #{&}-form{
         position: relative;
+        width: inherit;
         margin: 2em 0;
-        padding: 2em 3em;
+        padding: 2em 1.5em;
 
         border:0.2em solid#2b25c7;
         box-shadow: 0px 0px 28px 3px rgba(43,37,199,1);
-        border-radius: 0.5em;;
+        border-radius: 0.5em;
+
+        label{
+            font-style: italic;
+        }
+
+        @at-root input, textarea{
+            box-sizing: border-box;
+            padding: 0.3em 0 .3em 0.6em;
+            font-size: 1.1rem;
+            border: 0.1em solid#2b25c7;
+            border-radius: 0.5em;
+
+            @at-root input:focus, textarea:focus{
+                border-color: #9c99e5;  
+                outline: none;
+            }
+        }
+    
+        @at-root a.input{
+            display: block;
+            color: #2b25c7;
+            background-color: aqua;
+            font-size: 1.1em;
+            font-weight: bolder;
+            text-transform: uppercase;
+            text-align: center;
+            width: 100%;
+            padding: 0.3em 0;
+
+            border: 0.1em solid#2b25c7;
+            border-radius: 0.5em;
+
+            @at-root #{&}:hover{
+                border: 0.1em solid #9c99e5;
+            }
+        }
 
         &:before{
             position: absolute;
             top: -1em;
             left: 50%;
             transform: translateX(-50%);
-            font-size: 1.2em;
-            padding: 0.4em;
+            
+            padding: 0.3em;
+            width: 10em;
             background-color: lightblue;
             content: "Feedback form";
-            border: 0.2em solid #2b25c7;
+            font-size: 1.3em;
+            text-align: center;
+            border: 0.1em solid #2b25c7;
             border-radius: 0.5em; 
             z-index: 5;
         }
