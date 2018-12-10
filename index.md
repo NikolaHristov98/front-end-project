@@ -1,6 +1,7 @@
 ---
 layout: home
-permalink: {{site.baseurl}}/
+permalink: /
+base_url: /
 class: home
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: home
-permalink: {{site.baseurl}}/contact/
-
+permalink: /contact/
+base_url: ../
 class: contact
 ---
 

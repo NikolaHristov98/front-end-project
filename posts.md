@@ -1,7 +1,7 @@
 ---
 layout: home
-permalink: {{site.baseurl}}/posts/
-
+permalink: /posts/
+base_url: ../
 class: posts
 ---
 
