@@ -28,3 +28,4 @@ exclude:
   - docs
   - node_modules
   - scss
+  - a.html

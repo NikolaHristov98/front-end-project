@@ -5,79 +5,17 @@ base_url: ../
 class: posts
 ---
 
-   <div class="post">
-        <div class="img-container">
-            <img src="../imgs/test.jpg" alt="asd">
-        </div>
-        <div class="content">
-            <p class="title">Placeholder Title</p>
-            <p class="desc">Paceholder Dscription: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p class="author">Nikola Hristov</p>
-        </div>
+{% for post in site.posts %}
+ <div class="post_tumb">
+    <div class="img-container">
+        <img src="{{post.image_src}}" alt="asd">
     </div>
-
-   <div class="post">
-        <div class="img-container">
-            <img src="../imgs/test.jpg" alt="asd">
-        </div>
-        <div class="content">
-            <p class="title">Placeholder Title</p>
-            <p class="desc">Paceholder Dscription: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p class="author">Nikola Hristov</p>
-        </div>
+    <div class="content">
+        <p class="title">{{post.title}}</p>
+        <p class="desc">{{post.description}}</p>
+        <p class="author">{{post.author}}</p>
+        <a href="{{site.baseurl}}{{post.url}}">Read more...</a>
     </div>
-
- <div class="post">
-        <div class="img-container">
-            <img src="../imgs/test.jpg" alt="asd">
-        </div>
-        <div class="content">
-            <p class="title">Placeholder Title</p>
-            <p class="desc">Paceholder Dscription: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p class="author">Nikola Hristov</p>
-        </div>
-    </div>
-
-<div class="post">
-        <div class="img-container">
-            <img src="../imgs/test.jpg" alt="asd">
-        </div>
-        <div class="content">
-            <p class="title">Placeholder Title</p>
-            <p class="desc">Paceholder Dscription: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p class="author">Nikola Hristov</p>
-        </div>
-    </div>
-
-   <div class="post">
-        <div class="img-container">
-            <img src="../imgs/test.jpg" alt="asd">
-        </div>
-        <div class="content">
-            <p class="title"></p>
-            <p class="desc"></p>
-            <p class="author"></p>
-        </div>
-    </div>
-
-   <div class="post">
-        <div class="img-container">
-            <img src="../imgs/test.jpg" alt="asd">
-        </div>
-        <div class="content">
-            <p class="title"></p>
-            <p class="desc"></p>
-            <p class="author"></p>
-        </div>
-    </div>
-
-   <div class="post">
-        <div class="img-container">
-            <img src="../imgs/test.jpg" alt="asd">
-        </div>
-        <div class="content">
-            <p class="title"></p>
-            <p class="desc"></p>
-            <p class="author"></p>
-        </div>
-    </div>
+</div>
+{% endfor %}	
+ 

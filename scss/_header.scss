@@ -1,8 +1,4 @@
 .site{
-    $parent: &;
-
-    
-
     @at-root #{&}-header{
         
         display: grid;
