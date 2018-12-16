@@ -28,6 +28,10 @@
         font-size: 2.5rem;
         text-align: center;
         text-shadow: 4px 4px gray;
+        @at-root #{&}>a{
+            text-decoration: none;
+            color: black;
+        }
     }
 
     @at-root #{&}-nav{
@@ -41,7 +45,24 @@
 
         @at-root #{&}>ul {
             display:none;
-        }      
+
+            @at-root #{&} li{
+                transition: font-size 0.3s;
+            }
+
+            @for $i from 1 through 4 {
+                @at-root #{&} li:nth-of-type(#{$i}) {
+                  animation: links-animation #{$i*0.2}s;
+                  animation-direction: alternate;
+                }
+             }
+
+             @at-root #{&} li:hover{
+                font-size: 1.4em;
+            }
+        } 
+        
+        
     }
 
     @at-root #toggle-menu{
@@ -49,25 +70,26 @@
     }
 
     @at-root #toggle-menu:checked + .site-nav  ul{
+        @at-root #{&}>li{
+            padding: 0.4em;
+            text-align: center;  
+        }
+
         top:0; left:0; right: 0; bottom:0;
         position: absolute;
         display: flex;
+        transition: display 2s;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: red;
+        background-color: rgba(#9c99e5, 0.9);
         z-index: 999;
-
-        @at-root #{&}>li{
-            padding: 0.21em;
-            text-align: center;
-        }
-
+        font-size: 2em;
     }
 
     @media screen and (min-width: 1500px){
         @at-root #{&}-header{
-            grid-template-columns: 1fr 2fr 2fr;
+            grid-template-columns: 1fr 3fr 3fr;
         }
 
         @at-root #{&}-nav {
@@ -81,8 +103,25 @@
         @at-root #{&}-nav>ul {
             position: inherit;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             text-align: center;
+            margin-left:1em;
+
+            @at-root #{&} li{
+                animation: none !important;
+            }
         }  
+    }
+}
+
+@keyframes links-animation{
+    from{
+        transform: translateY(-5em);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateY(0rem);
+        opacity: 1;
     }
 }

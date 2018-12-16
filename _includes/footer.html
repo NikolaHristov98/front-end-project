@@ -1,24 +1,28 @@
 <footer class="footer">
     <div class="branding">
-        <img src="{{site.logo}}" alt="" class="branding-logo">
+        <img src="{{site.baseurl}}{{site.logo}}" alt="" class="branding-logo">
         <p class="branding-title">{{site.title | upcase}}</p>
     </div>
     <div class="moto">From gamers to gamers</div>
     <div class="footer-category">
-        <p>Site map</p>
-        <ul>
-            <li><i class="fas fa-home"></i><a href="{{site.baseurl}}/"><p>Home</p></a></li>
-            <li><i class="fas fa-th"></i><a href="{{site.baseurl}}/posts"><p>Posts</p></a></li>
-            <li><i class="fas fa-envelope"></i><a href="{{site.baseurl}}/contact"><p>Contact Us</p></a></li>
-            <li><i class="fas fa-bell"></i><a href="{{site.baseurl}}/subscribe"><p>Subscribe</p></a></li>
-        </ul>
+        <p class="footer-category-title">Site map</p>
+        <div class="footer-category-content">
+            <ul>
+                <li><i class="fas fa-home"></i><a class="link" href="{{site.baseurl}}/"><p>Home</p></a></li>
+                <li><i class="fas fa-th"></i><a class="link" href="{{site.baseurl}}/posts"><p>Posts</p></a></li>
+                <li><i class="fas fa-envelope"></i><a class="link" href="{{site.baseurl}}/contact"><p>Contact Us</p></a></li>
+                <li><i class="fas fa-bell"></i><a class="link" href="{{site.baseurl}}/subscribe"><p>Subscribe</p></a></li>
+            </ul>
+        </div>
     </div>
     <div class="footer-category">
-        <p>Contacts</p>
-        <p >Nikola Hristov</p>
-        <ul>   
-            <li><i class="fas fa-at"></i><p>{{site.email}}</p></li>
-            <li><i class="fab fa-github-square"></i><a href="https://github.com/NikolaHristov98"><p>{{site.github_username}}</p></a></li>
-        </ul>
+        <p class="footer-category-title">Contacts:</p>
+        <div class="footer-category-content">
+            <p >Nikola Hristov</p>
+            <ul>   
+                <li><i class="fas fa-at"></i><p>{{site.email}}</p></li>
+                <li><i class="fab fa-github-square"></i><a class="link" href="https://github.com/NikolaHristov98"><p>{{site.github_username}}</p></a></li>
+            </ul>
+        </div>
     </div>
 </footer>

@@ -36,8 +36,15 @@ footer{
 
     @at-root .#{&}-category{
         font-size: 1.2em;
-        > p:first-child{
-            margin-bottom: 0.6em;
+        
+        @at-root #{&}-title{
+            font-weight: bold;
+            text-decoration: underline;
+            margin-bottom: 0.8em;
+        }
+
+        @at-root #{&}-content{
+            padding-left: 0.2em;
         }
     }
 

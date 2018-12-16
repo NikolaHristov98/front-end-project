@@ -1,7 +1,6 @@
 ---
 layout: home
 permalink: /posts/
-base_url: ../
 class: posts
 ---
 

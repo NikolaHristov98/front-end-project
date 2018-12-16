@@ -1,13 +1,12 @@
 ---
 layout: home
 permalink: /contact/
-base_url: ../
 class: contact
 ---
 
 <div class="contacts">
     
-    <p class="title">Contacts</p>
+    <p class="title">Contacts:</p>
     <p class="name">Nikola Hristov</p>
     <ul>   
         <li><i class="fas fa-at"></i><p>{{site.email}}</p></li>

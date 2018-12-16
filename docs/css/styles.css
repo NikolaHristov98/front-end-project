@@ -130,6 +130,9 @@ h6 {
   font-size: 2.5rem;
   text-align: center;
   text-shadow: 4px 4px gray; }
+  .site-title > a {
+    text-decoration: none;
+    color: black; }
 
 .site-nav {
   justify-self: center; }
@@ -139,6 +142,31 @@ h6 {
     font-size: 2em; }
   .site-nav > ul {
     display: none; }
+    .site-nav > ul li {
+      -webkit-transition: font-size 0.3s;
+      transition: font-size 0.3s; }
+    .site-nav > ul li:nth-of-type(1) {
+      -webkit-animation: links-animation 0.2s;
+      animation: links-animation 0.2s;
+      -webkit-animation-direction: alternate;
+      animation-direction: alternate; }
+    .site-nav > ul li:nth-of-type(2) {
+      -webkit-animation: links-animation 0.4s;
+      animation: links-animation 0.4s;
+      -webkit-animation-direction: alternate;
+      animation-direction: alternate; }
+    .site-nav > ul li:nth-of-type(3) {
+      -webkit-animation: links-animation 0.6s;
+      animation: links-animation 0.6s;
+      -webkit-animation-direction: alternate;
+      animation-direction: alternate; }
+    .site-nav > ul li:nth-of-type(4) {
+      -webkit-animation: links-animation 0.8s;
+      animation: links-animation 0.8s;
+      -webkit-animation-direction: alternate;
+      animation-direction: alternate; }
+    .site-nav > ul li:hover {
+      font-size: 1.4em; }
 
 #toggle-menu {
   display: none; }
@@ -152,6 +180,8 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: display 2s;
+  transition: display 2s;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -162,15 +192,16 @@ h6 {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: red;
-  z-index: 999; }
+  background-color: rgba(156, 153, 229, 0.9);
+  z-index: 999;
+  font-size: 2em; }
   #toggle-menu:checked + .site-nav ul > li {
-    padding: 0.21em;
+    padding: 0.4em;
     text-align: center; }
 
 @media screen and (min-width: 1500px) {
   .site-header {
-    grid-template-columns: 1fr 2fr 2fr; }
+    grid-template-columns: 1fr 3fr 3fr; }
   .site-nav {
     justify-self: auto; }
   .site-nav > label {
@@ -180,10 +211,33 @@ h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    text-align: center; } }
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    text-align: center;
+    margin-left: 1em; }
+    .site-nav > ul li {
+      -webkit-animation: none !important;
+      animation: none !important; } }
+
+@-webkit-keyframes links-animation {
+  from {
+    -webkit-transform: translateY(-5em);
+    transform: translateY(-5em);
+    opacity: 0; }
+  to {
+    -webkit-transform: translateY(0rem);
+    transform: translateY(0rem);
+    opacity: 1; } }
+
+@keyframes links-animation {
+  from {
+    -webkit-transform: translateY(-5em);
+    transform: translateY(-5em);
+    opacity: 0; }
+  to {
+    -webkit-transform: translateY(0rem);
+    transform: translateY(0rem);
+    opacity: 1; } }
 
 footer {
   display: grid;
@@ -213,8 +267,12 @@ footer {
     align-self: center; }
   .footer-category {
     font-size: 1.2em; }
-    .footer-category > p:first-child {
-      margin-bottom: 0.6em; }
+    .footer-category-title {
+      font-weight: bold;
+      text-decoration: underline;
+      margin-bottom: 0.8em; }
+    .footer-category-content {
+      padding-left: 0.2em; }
   footer ul > li {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -231,12 +289,12 @@ main {
   main p {
     margin: 1em 0; }
 
-a {
+a.link {
   text-decoration: none;
   color: darkblue; }
 
 /* mouse over link */
-a:hover {
+a.link:hover {
   color: lightsteelblue; }
 
 form {
@@ -265,9 +323,12 @@ form {
   -ms-flex-align: center;
   align-items: center; }
   .contact .contacts {
-    margin: 1em 1em; }
+    margin: 1em 1.5em; }
     .contact .contacts .title {
-      font-size: 1.5em; }
+      letter-spacing: 0.07em;
+      font-size: 1.3em;
+      font-weight: bold;
+      text-decoration: underline; }
     .contact .contacts ul > li {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -275,7 +336,12 @@ form {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      padding-left: 1em; }
+      padding-left: 0.6em; }
+      .contact .contacts ul > li i {
+        margin-right: 0.4em;
+        -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+        align-items: baseline; }
     .contact .contacts p {
       margin: 0.3em 0; }
   .contact-form {
