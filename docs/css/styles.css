@@ -110,10 +110,7 @@ h6 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  grid-template-columns: 1fr 2fr; }
-  @media screen and (min-width: 600px) {
-    .site-header {
-      grid-template-columns: 1fr 4fr 5fr; } }
+  grid-template-columns: 1fr 2fr 1fr; }
   .site-header:after {
     display: block;
     width: inherit;
@@ -123,37 +120,74 @@ h6 {
     grid-column: 1 / -1; }
 
 .site-logo {
+  justify-self: center;
   width: 5rem;
   padding-left: 1rem; }
 
 .site-title {
   font-family: "overpass";
   font-weight: bolder;
-  font-size: 2rem;
-  text-align: center; }
+  font-size: 2.5rem;
+  text-align: center;
+  text-shadow: 4px 4px gray; }
 
 .site-nav {
-  grid-column: 1 / -1;
-  padding: 0.2rem 4rem; }
+  justify-self: center; }
+  .site-nav > label {
+    position: relative;
+    z-index: 1000;
+    font-size: 2em; }
   .site-nav > ul {
-    list-style: none;
+    display: none; }
+
+#toggle-menu {
+  display: none; }
+
+#toggle-menu:checked + .site-nav ul {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: red;
+  z-index: 999; }
+  #toggle-menu:checked + .site-nav ul > li {
+    padding: 0.21em;
+    text-align: center; }
+
+@media screen and (min-width: 1500px) {
+  .site-header {
+    grid-template-columns: 1fr 2fr 2fr; }
+  .site-nav {
+    justify-self: auto; }
+  .site-nav > label {
+    display: none; }
+  .site-nav > ul {
+    position: inherit;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-    justify-content: space-around; }
-    .site-nav > ul > li {
-      text-align: center;
-      font-size: 1rem;
-      margin: 0 0.3rem; }
-  @media screen and (min-width: 600px) {
-    .site-nav {
-      padding: 0.2rem 1rem 0.2rem 0;
-      grid-column: inherit; } }
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    text-align: center; } }
 
 footer {
   display: grid;
-  grid-template-columns: 2fr 3fr 1fr 1fr;
+  grid-template-columns: 1fr 4fr 1fr 1fr;
   padding: 2rem 0;
   font-size: 0.7rem; }
   footer:before {
@@ -170,9 +204,10 @@ footer {
     .branding .branding-logo {
       width: 5em; }
     .branding .branding-title {
-      font-size: 1.1em; }
+      font-size: 1.3em; }
   .moto {
-    font-size: 1.5em;
+    text-align: center;
+    font-size: 2.5em;
     font-style: italic;
     -ms-flex-item-align: center;
     align-self: center; }

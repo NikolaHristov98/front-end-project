@@ -1,12 +1,16 @@
 <header class="site-header"> 
+        
         <div class="site-logo"><img src="{{site.baseurl}}{{site.logo}}" alt=""></div>
         <div class="site-title">{{site.title | upcase }}</div>
+        <input type="checkbox" id="toggle-menu" name="toggle-menu" class="hidden">
         <div class="site-nav">
-            <ul>
-                    <li><a href="{{site.baseurl}}/"><i class="fas fa-home"></i><p>Home</p></a></li>
-                    <li><a href="{{site.baseurl}}/posts"><i class="fas fa-th"></i><p>Posts</p></a></li>
-                    <li><a href="{{site.baseurl}}/contact"><i class="fas fa-envelope"></i><p>Contact Us</p></a></li>
-                    <li><a href="{{site.baseurl}}/subscribe"><i class="fas fa-bell"></i><p>Subscribe</p></a></li>
+                <label for="toggle-menu" class="fas fa-chevron-circle-down"></label>
+                   
+                <ul>
+                        <li><a href="{{site.baseurl}}/"><i class="fas fa-home"></i><p>Home</p></a></li>
+                        <li><a href="{{site.baseurl}}/posts"><i class="fas fa-th"></i><p>Posts</p></a></li>
+                        <li><a href="{{site.baseurl}}/contact"><i class="fas fa-envelope"></i><p>Contact Us</p></a></li>
+                        <li><a href="{{site.baseurl}}/subscribe"><i class="fas fa-bell"></i><p>Subscribe</p></a></li>
                 </ul>
         </div>
 </header>

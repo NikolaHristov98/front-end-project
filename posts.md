@@ -8,7 +8,7 @@ class: posts
 {% for post in site.posts %}
  <div class="post_tumb">
     <div class="img-container">
-        <img src="{{post.image_src}}" alt="asd">
+        <img src="{{site.baseurl}}{{post.image_src}}" alt="asd">
     </div>
     <div class="content">
         <p class="title">{{post.title}}</p>

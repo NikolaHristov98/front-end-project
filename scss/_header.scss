@@ -3,12 +3,8 @@
         
         display: grid;
         align-items: center;
-        grid-template-columns: 1fr 2fr ;
+        grid-template-columns: 1fr 2fr 1fr;
         
-        @media screen and (min-width: 600px) {
-            grid-template-columns: 1fr 4fr 5fr;
-          }
-
         @at-root #{&}:after{
             display: block;
             width: inherit;
@@ -17,10 +13,11 @@
             border-bottom: 0.2rem solid black;
             grid-column: 1 / -1;
         }
+
     }
 
     @at-root #{&}-logo{
-        
+        justify-self: center;
         width: 5rem;
         padding-left: 1rem;
     }
@@ -28,31 +25,64 @@
     @at-root #{&}-title{
         font-family: "overpass";
         font-weight: bolder;
-        font-size: 2rem;
+        font-size: 2.5rem;
         text-align: center;
+        text-shadow: 4px 4px gray;
     }
 
     @at-root #{&}-nav{
-        grid-column: 1 / -1;
-        padding: 0.2rem 4rem;    
+        justify-self: center;
 
-        @at-root & > ul{
-            list-style: none;
-            display: flex;
-            justify-content: space-around;
-            
-            @at-root & > li{
-                text-align: center;
-                font-size: 1rem;
-                margin: 0 0.3rem;
-            }
+        @at-root #{&}>label {
+            position: relative;
+            z-index: 1000;
+            font-size: 2em;
         }
 
-
-        @media screen and (min-width: 600px) {
-            padding: 0.2rem 1rem 0.2rem 0;
-            grid-column: inherit;
-        }
+        @at-root #{&}>ul {
+            display:none;
+        }      
     }
 
+    @at-root #toggle-menu{
+        display: none;
+    }
+
+    @at-root #toggle-menu:checked + .site-nav  ul{
+        top:0; left:0; right: 0; bottom:0;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: red;
+        z-index: 999;
+
+        @at-root #{&}>li{
+            padding: 0.21em;
+            text-align: center;
+        }
+
+    }
+
+    @media screen and (min-width: 1500px){
+        @at-root #{&}-header{
+            grid-template-columns: 1fr 2fr 2fr;
+        }
+
+        @at-root #{&}-nav {
+            justify-self: auto;
+        }
+
+        @at-root #{&}-nav>label {
+            display: none;
+        }
+
+        @at-root #{&}-nav>ul {
+            position: inherit;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }  
+    }
 }
