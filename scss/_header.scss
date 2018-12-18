@@ -53,20 +53,28 @@
             @for $i from 1 through 4 {
                 @at-root #{&} li:nth-of-type(#{$i}) {
                   animation: links-animation #{$i*0.2}s;
-                  animation-direction: alternate;
                 }
              }
 
              @at-root #{&} li:hover{
                 font-size: 1.4em;
             }
-        } 
-        
-        
+        }     
     }
 
-    @at-root #toggle-menu{
+    @at-root #toggle-menu, #toggle-menu-off{
         display: none;
+    }
+
+    @at-root  #toggle-menu-on, #toggle-menu-off{
+        color:#AC92EC;
+        transition: font-size 0.2s, text-shadow 0.2s,  
+    }
+
+    @at-root  #toggle-menu-on:hover, #toggle-menu-off:hover{
+        font-size: 3em;
+        color: #865EE3;
+        text-shadow: 0px 0px 10px #9c99e5;
     }
 
     @at-root #toggle-menu:checked + .site-nav  ul{
@@ -82,9 +90,17 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: rgba(#9c99e5, 0.9);
+        background-color: rgba(white, 0.9);
         z-index: 999;
         font-size: 2em;
+    }
+
+    @at-root #toggle-menu:checked + .site-nav #toggle-menu-off{
+        display:block;
+    }
+
+    @at-root #toggle-menu:checked + .site-nav #toggle-menu-on{
+        display:none;
     }
 
     @media screen and (min-width: 1500px){

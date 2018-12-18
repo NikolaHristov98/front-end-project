@@ -5,7 +5,7 @@ title: "The downfall of Bethesda"
 categories: [Bethesda, F76]
 description: How one of the most beloved game companies managed to get everybody angry...
 author: Nikola Hristov
-image_src: /imgs/test.jpg
+image_src: /imgs/fallout-76-downfall.jpg
 ---
 
 <div class="post-header">
