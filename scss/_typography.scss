@@ -13,9 +13,9 @@ html{
 
 
 @for $i from 1 through 6{
-    @media screen and (min-width: #{$base-display-width + ($i - 1)*150}px){
+    @media screen and (min-width: #{$base-display-width + ($i - 1)*200}px){
         html{
-            font-size: #{$base-font-size + $i*1.5};
+            font-size: #{$base-font-size + ($i - 1)*1.6};
             padding: 2em #{$i  *3}rem;
         }
     }

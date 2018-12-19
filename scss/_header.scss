@@ -45,6 +45,7 @@
 
         @at-root #{&}>ul {
             display:none;
+            
 
             @at-root #{&} li{
                 transition: font-size 0.3s;
@@ -119,12 +120,14 @@
         @at-root #{&}-nav>ul {
             position: inherit;
             display: flex;
+            align-items:baseline;
             justify-content: space-around;
             text-align: center;
             margin-left:1em;
 
             @at-root #{&} li{
                 animation: none !important;
+                flex: 0 0 auto;
             }
         }  
     }

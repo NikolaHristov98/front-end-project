@@ -34,11 +34,11 @@
     @at-root #{&}-form{
         position: relative;
         width: inherit;
-        margin: 2em 0;
+        margin: 2em 1em;
         padding: 2em 1.5em;
-
-        border:0.2em solid#2b25c7;
-        box-shadow: 0px 0px 28px 3px rgba(43,37,199,1);
+        place-self: center stretch;
+        border:0.2em solid#AC92EC;
+        box-shadow: 0px 0px 28px 3px #9c99e5;
         border-radius: 0.5em;
 
         label{
@@ -49,7 +49,7 @@
             box-sizing: border-box;
             padding: 0.3em 0 .3em 0.6em;
             font-size: 1.1rem;
-            border: 0.1em solid#2b25c7;
+            border: 0.1em solid#AC92EC;
             border-radius: 0.5em;
 
             @at-root input:focus, textarea:focus{
@@ -61,7 +61,7 @@
         @at-root a.input{
             display: block;
             color: #2b25c7;
-            background-color: aqua;
+            background-color: #9c99e5;
             font-size: 1.1em;
             font-weight: bolder;
             text-transform: uppercase;
@@ -69,11 +69,12 @@
             width: 100%;
             padding: 0.3em 0;
 
-            border: 0.1em solid#2b25c7;
+            border: 0.1em solid#AC92EC;
             border-radius: 0.5em;
+            transition: border 0.2s;
 
             @at-root #{&}:hover{
-                border: 0.1em solid #9c99e5;
+                border: 0.1em solid #2b25c7;
             }
         }
 
@@ -83,13 +84,14 @@
             left: 50%;
             transform: translateX(-50%);
             
+            color: #2b25c7;
             padding: 0.3em;
             width: 10em;
             background-color: lightblue;
             content: "Feedback form";
             font-size: 1.3em;
             text-align: center;
-            border: 0.1em solid #2b25c7;
+            border: 0.1em solid #AC92EC;
             border-radius: 0.5em; 
             z-index: 5;
         }
@@ -97,10 +99,13 @@
 
     @media screen and (min-width: 600px) {
         display: grid;
-        grid-template-columns: 1fr 3fr ;
+        grid-template-columns: 1fr 2fr ;
+        justify-items: center;
       }
 
-    
-
-    
+      @media screen and (min-width:2000px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        justify-items: center;
+      }
 }

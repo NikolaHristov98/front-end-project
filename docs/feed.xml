@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="front-end-project/feed.xml" rel="self" type="application/atom+xml" /><link href="front-end-project/" rel="alternate" type="text/html" /><updated>2018-12-18T12:51:46+02:00</updated><id>front-end-project/feed.xml</id><title type="html">The game journal</title><subtitle>It is minimal and lazy!</subtitle><entry><title type="html">The downfall of Bethesda</title><link href="front-end-project/bethesda/f76/2018/12/11/The-downfall-of-Bethesda.html" rel="alternate" type="text/html" title="The downfall of Bethesda" /><published>2018-12-11T00:00:00+02:00</published><updated>2018-12-11T00:00:00+02:00</updated><id>front-end-project/bethesda/f76/2018/12/11/The-downfall-of-Bethesda</id><content type="html" xml:base="front-end-project/bethesda/f76/2018/12/11/The-downfall-of-Bethesda.html">&lt;div class=&quot;post-header&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="feed.xml" rel="self" type="application/atom+xml" /><link href="" rel="alternate" type="text/html" /><updated>2018-12-19T22:36:47+02:00</updated><id>feed.xml</id><title type="html">The game journal</title><subtitle>It is minimal and lazy!</subtitle><entry><title type="html">The downfall of Bethesda</title><link href="bethesda/f76/2018/12/11/The-downfall-of-Bethesda.html" rel="alternate" type="text/html" title="The downfall of Bethesda" /><published>2018-12-11T00:00:00+02:00</published><updated>2018-12-11T00:00:00+02:00</updated><id>bethesda/f76/2018/12/11/The-downfall-of-Bethesda</id><content type="html" xml:base="bethesda/f76/2018/12/11/The-downfall-of-Bethesda.html">&lt;div class=&quot;post-header&quot;&gt;
     &lt;p class=&quot;post-title&quot;&gt;Lorem Ipsum&lt;/p&gt;
     &lt;p class=&quot;post-description&quot;&gt;How one of the most beloved game companies managed to get everybody angry...&lt;/p&gt;
 &lt;/div&gt;
@@ -19,4 +19,34 @@ Nikola Hristov
 
 &lt;div class=&quot;about_author&quot;&gt;
     &lt;p&gt;NIkola Hristov: bla bla bla&lt;/p&gt;
-&lt;/div&gt;</content><author><name>Nikola Hristov</name></author><summary type="html">Lorem Ipsum How one of the most beloved game companies managed to get everybody angry...</summary></entry><entry><title type="html">Upcoming Steam winter sale</title><link href="front-end-project/steam/winter/sale/2018/10/12/Upcoming-steam-winter-sale.html" rel="alternate" type="text/html" title="Upcoming Steam winter sale" /><published>2018-10-12T00:00:00+03:00</published><updated>2018-10-12T00:00:00+03:00</updated><id>front-end-project/steam/winter/sale/2018/10/12/Upcoming-steam-winter-sale</id><content type="html" xml:base="front-end-project/steam/winter/sale/2018/10/12/Upcoming-steam-winter-sale.html"></content><author><name>Nikola Hristov</name></author><summary type="html"></summary></entry><entry><title type="html">New upcoming games in Decenber</title><link href="front-end-project/new/games/december/2018/01/12/New-comming-games-in-December.html" rel="alternate" type="text/html" title="New upcoming games in Decenber" /><published>2018-01-12T00:00:00+02:00</published><updated>2018-01-12T00:00:00+02:00</updated><id>front-end-project/new/games/december/2018/01/12/New-comming-games-in-December</id><content type="html" xml:base="front-end-project/new/games/december/2018/01/12/New-comming-games-in-December.html"></content><author><name>Nikola Hristov</name></author><summary type="html"></summary></entry></feed>
+&lt;/div&gt;</content><author><name>Nikola Hristov</name></author><summary type="html">Lorem Ipsum How one of the most beloved game companies managed to get everybody angry...</summary></entry><entry><title type="html">Upcoming Steam winter sale</title><link href="steam/winter/sale/2018/10/12/Upcoming-steam-winter-sale.html" rel="alternate" type="text/html" title="Upcoming Steam winter sale" /><published>2018-10-12T00:00:00+03:00</published><updated>2018-10-12T00:00:00+03:00</updated><id>steam/winter/sale/2018/10/12/Upcoming-steam-winter-sale</id><content type="html" xml:base="steam/winter/sale/2018/10/12/Upcoming-steam-winter-sale.html">&lt;div class=&quot;post-header&quot;&gt;
+    &lt;p class=&quot;post-title&quot;&gt;Lorem Ipsum&lt;/p&gt;
+    &lt;p class=&quot;post-description&quot;&gt;Steam announced the winter sale&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;post-main&quot;&gt;
+ &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+    &lt;div class=&quot;post-galery&quot;&gt;
+        &lt;img src=&quot;/imgs/sws-hollow-knight.jpg&quot; /&gt;
+        &lt;img src=&quot;/imgs/sws-binary-domain.jpg&quot; /&gt;
+        &lt;img src=&quot;/imgs/sws-hollow-knight.jpg&quot; /&gt;
+        &lt;img src=&quot;/imgs/sws-hollow-knight.jpg&quot; /&gt;
+        &lt;img src=&quot;/imgs/sws-hollow-knight.jpg&quot; /&gt;
+        &lt;img src=&quot;/imgs/sws-ziggurat.jpg&quot; /&gt;
+        &lt;img src=&quot;/imgs/sws-hollow-knight.jpg&quot; /&gt;
+        &lt;img src=&quot;/imgs/sws-terraria.png&quot; /&gt;
+    &lt;/div&gt;
+&lt;blockquote class=&quot;post-quote&quot;&gt;
+&lt;p class=&quot;post-quote-quote&quot;&gt;
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+&lt;/p&gt;
+&lt;p class=&quot;post-quote-author&quot;&gt;
+Nikola Hristov
+&lt;/p&gt;
+&lt;/blockquote&gt;
+ &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;about_author&quot;&gt;
+    &lt;p&gt;NIkola Hristov: bla bla bla&lt;/p&gt;
+&lt;/div&gt;</content><author><name>Nikola Hristov</name></author><summary type="html">Lorem Ipsum Steam announced the winter sale</summary></entry><entry><title type="html">New upcoming games in Decenber</title><link href="new/games/december/2018/01/12/New-comming-games-in-December.html" rel="alternate" type="text/html" title="New upcoming games in Decenber" /><published>2018-01-12T00:00:00+02:00</published><updated>2018-01-12T00:00:00+02:00</updated><id>new/games/december/2018/01/12/New-comming-games-in-December</id><content type="html" xml:base="new/games/december/2018/01/12/New-comming-games-in-December.html"></content><author><name>Nikola Hristov</name></author><summary type="html"></summary></entry></feed>

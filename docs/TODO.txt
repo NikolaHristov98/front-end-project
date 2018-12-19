@@ -1,5 +1,1 @@
-1. Add animations
-2. Add more styles to the name  of the site
-3. Fiz the name of the site in the footer
-4. Add subscribe page
-5. Refine more scss
+1. Fix the collors on the contact page
