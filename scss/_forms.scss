@@ -1,11 +1,11 @@
 form{
     display: block;
-    
-    width: 100%;
     box-sizing : border-box;
+    width: 100%;
     
     @at-root label{
       display: block;
+      font-style: italic;
     }
     
     @at-root textarea{
@@ -13,12 +13,33 @@ form{
       min-height:15em; 
     }
     
-    @at-root textarea, input{
-      margin: 0.2em 0 1em 0;
+    @at-root  input, textarea{
       width: inherit;
-    }
+      font-size: 1.1rem;
+      box-sizing: border-box;
+      border: 0.1em solid#AC92EC;
+      border-radius: 0.5em;
+      margin: 0.2em 0 1em 0;
+      padding: 0.3em 0 .3em 0.6em;
+      transition: border-color 0.3s;
 
-    @at-root input{
-      
-    }
-}
+      @at-root input:focus, textarea:focus{
+          border-color: #2b25c7;  
+          outline: none;
+      }
+  }
+
+  @at-root a.input{
+      display: block;
+      width: 100%;
+      font-size: 1.1em;
+      font-weight: bolder;
+      text-transform: uppercase;
+      text-align: center;
+      color: #2b25c7;
+      background-color: #9c99e5;              
+      border: 0.1em solid#AC92EC;
+      border-radius: 0.5em;
+      transition: border 0.2s;
+      padding: 0.3em 0;
+}}

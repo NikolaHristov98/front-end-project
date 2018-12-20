@@ -1,17 +1,16 @@
 .site{
-    @at-root #{&}-header{
-        
+    @at-root #{&}-header{    
         display: grid;
-        align-items: center;
         grid-template-columns: 1fr 2fr 1fr;
-        
+        align-items: center;
+              
         @at-root #{&}:after{
             display: block;
+            grid-column: 1 / -1;
             width: inherit;
+            border-bottom: 0.2rem solid black;
             margin-bottom: 1rem;
             content:"";
-            border-bottom: 0.2rem solid black;
-            grid-column: 1 / -1;
         }
 
     }
@@ -24,8 +23,8 @@
 
     @at-root #{&}-title{
         font-family: "overpass";
-        font-weight: bolder;
         font-size: 2.5rem;
+        font-weight: bolder;
         text-align: center;
         text-shadow: 4px 4px gray;
         @at-root #{&}>a{
@@ -38,15 +37,14 @@
         justify-self: center;
 
         @at-root #{&}>label {
+            font-size: 2em;
             position: relative;
             z-index: 1000;
-            font-size: 2em;
         }
 
         @at-root #{&}>ul {
             display:none;
             
-
             @at-root #{&} li{
                 transition: font-size 0.3s;
             }
@@ -84,16 +82,20 @@
             text-align: center;  
         }
 
-        top:0; left:0; right: 0; bottom:0;
-        position: absolute;
+        font-size: 2em;
+
         display: flex;
-        transition: display 2s;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+        position: absolute;
+        top:0; left:0; right: 0; bottom:0;   
+        
+        transition: display 2s;
+        
         background-color: rgba(white, 0.9);
         z-index: 999;
-        font-size: 2em;
     }
 
     @at-root #toggle-menu:checked + .site-nav #toggle-menu-off{
@@ -118,7 +120,6 @@
         }
 
         @at-root #{&}-nav>ul {
-            position: inherit;
             display: flex;
             align-items:baseline;
             justify-content: space-around;

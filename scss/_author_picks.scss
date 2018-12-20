@@ -1,12 +1,12 @@
 .top-picks{
     @at-root #{&}-galery{
-        position: relative;
-        margin: 2em 2em;
         display: grid;
         grid-template-columns: 1fr;
-        justify-items: center;
         grid-row-gap: 1em;
         grid-column-gap: 1em;
+        justify-items: center;
+        
+        margin: 2em 2em;
     
         @at-root #{&} .container .description{
             display:none;
@@ -17,8 +17,7 @@
             vertical-align: middle;
         }
 
-        @at-root #{&} .container{     
-            box-sizing: content-box;    
+        @at-root #{&} .container{       
             place-self: center;
             border: solid 3px #AC92EC;
             border-radius: 13px;
@@ -29,10 +28,10 @@
             @at-root #{&} .description{
                 padding: 0.3em 0.5em;
 
-                @at-root #{&}-title{
-                    text-align: center;
-                    font-weight: bold;
+                @at-root #{&}-title{ 
                     font-size: 1.2em;
+                    font-weight: bold;
+                    text-align: center;
                 }
 
                 @at-root #{&}-content{
@@ -45,7 +44,6 @@
     
         @at-root #{&} .container:hover {
             width: 110%;
-            z-index:100;
             border-color: #865EE3;
             box-shadow: 0px 0px 20px #9c99e5;
         }

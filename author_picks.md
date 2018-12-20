@@ -2,7 +2,7 @@
 layout: home
 permalink: /author_picks/
 class: author_picks
-description: Games that you should totalu try
+description: Games that you should totaly try
 ---
 
 <div class="post-header">

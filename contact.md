@@ -20,7 +20,7 @@ class: contact
         <input type="text" id="name">
         <label for="email">Email:</label>
         <input type="text"  id="email">
-        <label for="feedback">Your feedback</label>
+        <label for="feedback">Your feedback:</label>
         <textarea type="text" id="feedvack"></textarea>
         <a class="input">Send</a>
     </form>
