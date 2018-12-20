@@ -9,7 +9,7 @@ image_src: /imgs/steam-winter-sale.jpg
 ---
 
 <div class="post-header">
-    <p class="post-title">Lorem Ipsum</p>
+    <p class="post-title">{{page.title}}</p>
     <p class="post-description">{{page.description}}</p>
 </div>
 
